@@ -1,6 +1,5 @@
-/*@font-face {*/
-/*    font-family: DI;*/
-/*}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Tiro+Gurmukhi&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -9,5 +8,6 @@
 body {
     background-color: #000000;
     color:white;
-    font-family: "Space Grotesk";
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Space Grotesk', sans-serif;
 }
