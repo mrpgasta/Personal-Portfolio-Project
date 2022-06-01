@@ -27,6 +27,19 @@ export const NavLink = styled(Link)`
   &.active {
     color: #ff4400;
   }
+  
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+    
+    &.active {
+      background-color: black;
+      border-radius: 0;
+    }
+    //position: relative;
+  }
 `;
 
 export const Bars = styled(FaBars)`
@@ -53,7 +66,51 @@ margin-right: -24px;
 /* width: 100vw;
 white-space: nowrap; */
 @media screen and (max-width: 768px) {
-	display: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 80px;
+  left: -100%;
+  opacity: -1;
+  transition: all 0.5s ease;
+
+  &.active {
+    background: #ff4400;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+}
+`;
+
+export const NavMenuDropdown = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 80px;
+  left: -100%;
+  opacity: -1;
+  transition: all 0.5s ease;
+
+  &.active {
+    background: #ff4400;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+/* Second Nav */
+/* margin-right: 24px; */
+/* Third Nav */
+/* width: 100vw;
+white-space: nowrap; */
+@media screen and (max-width: 768px) {
+  
 }
 `;
 

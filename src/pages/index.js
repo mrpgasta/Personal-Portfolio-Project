@@ -12,14 +12,20 @@ export const Home = () => {
 
     return (
         <div style={{
+            paddingTop: "120px",
             color: "white",
             justifyContent: "left",
             display: "block",
             height:"1080px",
             alignItems: 'center'
         }}>
-            <div id='header' style={{
+            <div id='header' style={isTabletOrMobile?{
                 margin: "120px 20px 20px 20px",
+                paddingBottom: "100px",
+                padding: "0.2rem calc((100vw - 1000px) / 2)",
+            }:{
+                margin: "120px 20px 20px 20px",
+                paddingBottom: "220px",
                 padding: "0.2rem calc((100vw - 1000px) / 2)",
             }}>
                 <div style={{
@@ -42,7 +48,7 @@ export const Home = () => {
                     }}
                 />
                 <br/>
-                <div style={{lineHeight: "1.5"}}>
+                <div style={{lineHeight: "1.5",paddingBottom:"120px"}}>
                     <p style={{fontSize : "22px",color : "white"}}>
                         Proficient in graphic designing, animating motion graphics
                         and designing stunning websites.
